@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Room from './components/Room';
 import './styles.css';
 import { socketSeverUrl } from '../inits';
+import Loading from './components/Loading';
 
 const socket = io(socketSeverUrl, {
   transports: ['polling', 'websocket'],
@@ -35,7 +36,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (
