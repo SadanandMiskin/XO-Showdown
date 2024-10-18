@@ -267,3 +267,23 @@ button:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
 }
+
+@media only screen and (max-width: 768px) {
+    .cell {
+      aspect-ratio: 1;
+      font-size: 1.5rem; /* Reduced font size for mobile */
+      width: 60px; /* Reduced width for mobile */
+      /* Keep other styles intact */
+    }
+
+    .home1 h1{
+        font-size: 3rem;
+    }
+    .how-to-play h2 {
+        font-size: 1.2rem;
+    }
+    .how-to-play li {
+        font-size: 0.8rem;
+    }
+    
+  }

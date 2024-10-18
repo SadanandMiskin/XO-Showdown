@@ -10,21 +10,20 @@ const app = express();
 const server = http.createServer(app);
 
 // Socket.IO setup with CORS
-const io = socketIo(server, {
-  cors: {
-    origin: "*",
-    methods: ["GET", "POST"],
-    credentials: true
-  },
-  transports: ['websocket']
-});
-
+const io = require('socket.io')(server, {
+    cors: {
+      origin: ['https://xoshowdown.vercel.app'], // Allow specific origin
+      methods: ['GET', 'POST'],
+      credentials: true
+    },
+    transports: ['polling', 'websocket']
+  });
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/xo-game', {
+mongoose.connect('', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {

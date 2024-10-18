@@ -15,7 +15,7 @@ function Home({ onJoin }) {
     <div className="home1">
       <div className="pixel-bg" />
       <h1>XO Showdown</h1>
-      <p>Ready to play 1 vs 1 random or Play with Friends?</p>
+      <p>Online 1 vs 1 with random or a friend</p>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
