@@ -16,10 +16,11 @@ function Home({ onJoin }) {
       <div className="pixel-bg" />
       <h1>XO Showdown</h1>
       <p>Online 1 vs 1 with random or a friend</p>
+      <p>Enter 👇</p>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Your Gamer Tag"
+          placeholder="Enter Your Gamer Tag"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -39,7 +40,8 @@ function Home({ onJoin }) {
       <div className="call-to-action">
         <h2>Get Ready to Play!</h2>
         <p>Enter your name and join the battle!</p>
-        <button className="play-btn">Playyyy!</button>
+        <p className="play-btn">Playyy!</p>
+        
       </div>
     </div>
   );

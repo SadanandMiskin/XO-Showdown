@@ -53,7 +53,7 @@ html, body {
   
   .home1 form {
     width: 100%;
-    max-width: 300px;
+    max-width: 355px;
     z-index: 2;
     animation: scale-in 0.3s 0.7s;
   }
